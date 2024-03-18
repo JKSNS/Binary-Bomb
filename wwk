@@ -1,0 +1,38 @@
+What we know: 
+
+"%d, %c, %d" is the format the answer needs to be in. 
+
+
+Value being stored at cmp $0x2, %eax in "%eax" is 3. 
+
+ran x/s
+cmpl $0x7, 0x10(%rsp) => 0x7fffffffe970: "\001"
+
+This gets skipped: 
+   0x000055555555671d <+100>:   cmpl   $0x3c9,0x14(%rsp)
+   0x0000555555556725 <+108>:   je     0x555555556813 <phase_3+346>
+   0x000055555555672b <+114>:   call   0x555555556f3d <explode_bomb>
+   0x0000555555556730 <+119>:   mov    $0x66,%eax
+   0x0000555555556735 <+124>:   jmp    0x555555556813 <phase_3+346>
+
+ran x/s
+(missed $0x3c9, 0x14(%rsp)) 
+
+$0xa2, 0x14(%rsp) => 0x7fffffffe970: "\001"
+
+right after this, there's a jump if equal to this: 0x555555556813
+
+which: 
+0x555555556813 <phase_3+346>:   "8D$\017u\025H\213D$\030dH+\004%("
+(gdb)
+
+
+
+
+
+
+
+
+
+
+

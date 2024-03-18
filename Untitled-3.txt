@@ -1,0 +1,11 @@
+    26ec:       83 f8 02                cmp    $0x2,%eax
+    26f1:       83 7c 24 10 07          cmpl   $0x7,0x10(%rsp)
+    271d:       81 7c 24 14 c9 03 00    cmpl   $0x3c9,0x14(%rsp)
+273f:       81 7c 24 14 a2 00 00    cmpl   $0xa2,0x14(%rsp)
+    2761:       81 7c 24 14 3c 02 00    cmpl   $0x23c,0x14(%rsp)
+    2783:       81 7c 24 14 f0 02 00    cmpl   $0x2f0,0x14(%rsp)
+    27a2:       81 7c 24 14 95 02 00    cmpl   $0x295,0x14(%rsp)
+    27bd:       81 7c 24 14 ec 00 00    cmpl   $0xec,0x14(%rsp)
+    27d8:       81 7c 24 14 0d 01 00    cmpl   $0x10d,0x14(%rsp)
+    27f3:       81 7c 24 14 6b 02 00    cmpl   $0x26b,0x14(%rsp)
+    2813:       38 44 24 0f             cmp    %al,0xf(%rsp)

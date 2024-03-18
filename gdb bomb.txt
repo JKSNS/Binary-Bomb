@@ -1,0 +1,32 @@
+gdb bomb
+b phase_1
+b phase_2
+b phase_3
+b phase_4
+b phase_5
+b phase_6
+b explode_bomb
+run < answers.txt
+
+
+
+Phase 1: 
+
+disas
+
+x/25c 0x555555558150
+
+And they have no disregard for human life.
+
+c
+
+Phase 2: 
+
+1 2 4 8 16 32
+
+Phase 3: 
+
+1 a 162 not
+1 A 162 not
+
+969
