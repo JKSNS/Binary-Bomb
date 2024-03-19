@@ -46,5 +46,88 @@ Now im fighting with %al, 0xf(%rsp)
 
 phase_4
 
-18 sub -121 
+sub allocates 24 bites on the stack
+stack canaries, fs segment offset 28 into rax
+store rax val into rsp + 8
+set eax to zero
+copy stack pointer to rcx
+rsp+4 into rdx register
+load rsp into rsi
 
+SCAN
+compare 2 with eax: eax needs to be 2!
+
+
+The next number needs to be 4 because it is getting subtracted by 2 then compared to 2. 
+
+
+next number: 
+move rsp into esi: 4
+move 7 indo edi
+then calls func4
+
+Eax is 4 when it should be 5
+
+Just replaced 99 for 4
+
+I noticed that the comparison was asking for 99, and thought that earlier the bomb was asking for the value of 4, but I guess not?? 
+
+
+
+
+Phase 6
+
+so r14 has 5 in it
+
+eax has 6 in it
+Then 5 should get moved into it, making eax 5 now
+then it gets subtracted by 1. 
+
+
+
+
+
+okay phase 6 again: 
+643576 was going good. 
+
+
+Trying 643542
+
+At the first jmp: 
+r14: 6
+
+i give up, no ghidra is crazy. 
+pen and paper it is
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+answers: 
+
+And they have no disregard for human life.
+1 2 4 8 16 32
+2 r 572
+99 3
+5 115
+6 4 3 1 7 2
