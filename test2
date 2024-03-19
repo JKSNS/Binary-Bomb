@@ -10,3 +10,41 @@ i e U
 
 
 49 i 
+
+
+What we know: 
+
+Format: 
+Digit Character Digit
+
+After scanning the input, it checks if %eax is less than two. In other words, checking to see if you input 3 characters: digit, character, digit. 
+
+
+Then, the program checks to see if the first digit is greater than 7. Considering it is, it explodes the bomb. 
+
+
+After storing that information, the program then jumps to $rax, 163. 
+
+
+Then moves 72 into $eax, 114 in decimal
+
+the compares 23c to 14rsp, 
+
+correct address to examine: 0x7fffffffe984, 0xa2: 162 in decimal. that was my input. 
+comaring this against: 572 in decimal. 
+
+
+So I'm going to add that to my answers.txt then try to get to the same point I was at to continue the rev
+
+I MADE IT !!!
+
+
+Now im fighting with %al, 0xf(%rsp) 
+
+//////////////////////
+
+
+phase_4
+
+18 sub -121 
+
