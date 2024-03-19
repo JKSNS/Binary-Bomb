@@ -21,7 +21,7 @@ x/25c 0x555555558150
 
 And they have no disregard for human life.
 
-c
+x/3x
 
 Phase 2: 
 
