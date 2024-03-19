@@ -8,7 +8,10 @@ b phase_6
 b explode_bomb
 run < answers.txt
 
+layout asm
+layout reg
 
+for integer comparison, use x/d or x/x to determine memory as an int not string
 
 Phase 1: 
 
