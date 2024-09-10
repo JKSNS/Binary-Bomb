@@ -1,10 +1,4 @@
-# Binary Bomb: 
-
-Creating a README file for the "Binary Bomb" repository involves documenting the project's purpose, setup instructions, and the solution for each phase. Below is a comprehensive README template for the GitHub repository based on its contents and the solution steps provided.
-
----
-
-## Binary Bomb README
+## Binary Bomb 
 
 # Binary Bomb: Phase Solutions
 
