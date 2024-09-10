@@ -1,5 +1,3 @@
-## Binary Bomb 
-
 # Binary Bomb: Phase Solutions
 
 Welcome to the **Binary Bomb** project! This repository contains solutions for the Binary Bomb lab, a popular cybersecurity challenge used in computer science courses to teach reverse engineering and debugging techniques.
