@@ -6,7 +6,7 @@ Welcome to the **Binary Bomb** repository! This repository contains solutions fo
 
 1. [Overview](#overview)
 2. [Tools Needed](#tools-needed)
-3. [Understanding the Binary Bomb](#understanding-the-Binary Bomb)
+3. [Understanding the Binary Bomb](#understanding-the-binary-bomb)
 4. [Phase-by-Phase Solutions](#phase-by-phase-solutions)
    - [Phase 1](#phase-1)
    - [Phase 2](#phase-2)
