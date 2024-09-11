@@ -1,12 +1,12 @@
 # Binary Bomb: Phase Solutions
 
-Welcome to the **BombLab** repository! This repository contains solutions for the BombLab challenge, which is designed to enhance your understanding of x86-64 assembly, debugging, and reverse engineering techniques. This README provides detailed solutions for each phase of the bomb using insights gathered from various analysis files.
+Welcome to the **Binary Bomb** repository! This repository contains solutions for the Binary Bomb challenge, which is designed to enhance your understanding of x86-64 assembly, debugging, and reverse engineering techniques. This README provides detailed solutions for each phase of the bomb using insights gathered from various analysis files.
 
 ## Table of Contents
 
 1. [Overview](#overview)
 2. [Tools Needed](#tools-needed)
-3. [Understanding the BombLab](#understanding-the-bomblab)
+3. [Understanding the Binary Bomb](#understanding-the-Binary Bomb)
 4. [Phase-by-Phase Solutions](#phase-by-phase-solutions)
    - [Phase 1](#phase-1)
    - [Phase 2](#phase-2)
@@ -19,7 +19,7 @@ Welcome to the **BombLab** repository! This repository contains solutions for th
 
 ## Overview
 
-The **BombLab** challenge involves a binary executable that simulates a "bomb" with multiple phases, each requiring a specific input to "defuse" it. Providing the wrong input causes the bomb to "explode," necessitating a retry. The objective is to reverse engineer the binary and determine the correct inputs for each phase using various debugging and reverse engineering tools.
+The **Binary Bomb** challenge involves a binary executable that simulates a "bomb" with multiple phases, each requiring a specific input to "defuse" it. Providing the wrong input causes the bomb to "explode," necessitating a retry. The objective is to reverse engineer the binary and determine the correct inputs for each phase using various debugging and reverse engineering tools.
 
 ## Tools Needed
 
@@ -30,9 +30,9 @@ To successfully defuse the bomb, you will need the following tools:
 - **strings**: To find readable strings within the binary.
 - **Hex editor**: (optional) To view and manipulate the binary at the byte level.
 
-## Understanding the BombLab
+## Understanding the Binary Bomb
 
-The **BombLab** challenge consists of several phases, each requiring a specific input to pass. If the wrong input is entered, the bomb "explodes," and you need to start again. The goal is to defuse the bomb by figuring out the correct inputs for each phase.
+The **Binary Bomb** challenge consists of several phases, each requiring a specific input to pass. If the wrong input is entered, the bomb "explodes," and you need to start again. The goal is to defuse the bomb by figuring out the correct inputs for each phase.
 
 ## Phase-by-Phase Solutions
 
@@ -123,7 +123,7 @@ The **BombLab** challenge consists of several phases, each requiring a specific 
 
 ## Conclusion
 
-By carefully analyzing each phase using reverse engineering techniques and debugging tools, we successfully defused the **BombLab**. This challenge provides an excellent opportunity to develop skills in binary analysis, low-level debugging, and reverse engineering.
+By carefully analyzing each phase using reverse engineering techniques and debugging tools, we successfully defused the **Binary Bomb**. This challenge provides an excellent opportunity to develop skills in binary analysis, low-level debugging, and reverse engineering.
 
 Feel free to explore the repository further and try your own approaches to defusing the bomb!
 
