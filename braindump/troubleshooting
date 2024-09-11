@@ -1,0 +1,58 @@
+### Random personal notes for my Binary Bomb Phases
+
+#### Phase 3
+
+**Input Format:**  
+- The answer format must be: `"%d, %c, %d"` (digit, character, digit).
+
+**Observations:**
+
+1. **Value Check:**  
+   The program checks the value stored at `cmp $0x2, %eax` where the value in `%eax` is `3`.
+
+2. **Memory Examination with `x/s`:**  
+   When examining the memory with `x/s`, we see:
+   - `cmpl $0x7, 0x10(%rsp) => 0x7fffffffe970: "\001"` 
+
+3. **Conditional Check and Jump:**
+   - If the check `cmpl $0x3c9,0x14(%rsp)` does not match, it skips over the jump equal (`je`) instruction.
+   - If the value does not match `0x3c9`, it calls `explode_bomb` at address `0x555555556f3d`.
+
+4. **Jump Instructions:**
+   - After the comparison, if the value matches, it jumps to `0x555555556813 <phase_3+346>`:
+     - Code snippet at `0x555555556813`: `"8D$\017u\025H\213D$\030dH+\004%("`
+
+5. **Memory and Value Missed:**
+   - Ran `x/s` but missed `$0x3c9, 0x14(%rsp)`. Instead, we see `$0xa2, 0x14(%rsp) => 0x7fffffffe970: "\001"`.
+
+### Phase 4:
+
+- **Stack Operations**:
+  - Subroutine allocates 24 bytes on the stack.
+  - Stack canaries are set; the FS segment offset is moved into `rax`.
+  - Store the `rax` value at `rsp + 8`.
+  - Set `eax` to zero.
+  - Copy stack pointer to `rcx` and load `rsp` into `rsi`.
+
+- **Input Requirements**:
+  - The scanned input must result in `eax = 2`.
+  - The next number needs to be `4` because the program subtracts it by `2` and then compares the result to `2`.
+
+- **Sequence of Operations**:
+  - Move `rsp` into `esi` with value `4`.
+  - Move `7` into `edi`.
+  - Call `func4`.
+
+---
+
+### Phase 6:
+
+- `r14` register holds `5`.
+- `eax` initially holds `6`, but it should get `5` moved into it.
+- Then, `eax` is decremented by `1`.
+
+- Initial correct sequence was `643576`, but trying `643542` now.
+
+- At the first jump (`jmp`), `r14` holds `6`.
+
+---

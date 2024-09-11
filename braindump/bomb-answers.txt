@@ -8,6 +8,9 @@ b phase_6
 b explode_bomb
 run < answers.txt
 
+Notes: 
+
+Useful commands: 
 layout asm
 layout reg
 
@@ -33,3 +36,5 @@ Phase 3:
 1 A 162 not
 
 969
+
+...
