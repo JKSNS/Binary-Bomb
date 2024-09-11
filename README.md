@@ -1,6 +1,6 @@
 # Binary Bomb: 
 
-Welcome to the **Binary Bomb** repository! This repository provides solutions for the Binary Bomb challenge, which is designed to deepen your understanding of x86-64 assembly, debugging, and reverse engineering techniques. This README provides a general walkthrough / insights regarding general strategies to solve each phase of the bomb.
+Welcome to my **Binary Bomb** repository! This repository outlines my solutions for the Binary Bomb challenge, which is designed to deepen your understanding of x86-64 assembly, debugging, and reverse engineering techniques. Below is a general walkthrough and insights regarding strategies on how to solve each phase of the bomb.
 
 ## Table of Contents
 
